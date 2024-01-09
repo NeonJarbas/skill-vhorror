@@ -12,7 +12,7 @@ from ovos_workshop.skills.common_play import OVOSCommonPlaybackSkill
 class VHorrorSkill(OVOSCommonPlaybackSkill):
     def __init__(self, *args, **kwargs):
         self.supported_media = [MediaType.MOVIE]
-        self.skill_icon = self.default_bg = join(dirname(__file__), "ui", "vhorror_icon.jpg")
+        self.skill_icon = self.default_bg = join(dirname(__file__), "res", "vhorror_icon.jpg")
         self.archive = JsonStorageXDG("VHorror", subfolder="OCP")
         self.media_type_exceptions = {}
         super().__init__(*args, **kwargs)
